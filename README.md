@@ -73,14 +73,21 @@ storage/app/data/orders.json
 1. Clone the repository
 git clone <your-backend-repo-url>
 cd kitchen-spurs-api
-2. Install dependencies
-composer install)
 
-3. Generate app key
+3. Install dependencies
+composer (install)
+
+5. Setup environment
+copy .env.example .env
+
+(macOS/Linux)
+cp .env.example .env
+
+5. Generate app key
 php artisan key:generate
-4. Run migrations
+6. Run migrations
 php artisan migrate
-5. Start server
+7. Start server
 php artisan serve
 
 ## Server runs at:
